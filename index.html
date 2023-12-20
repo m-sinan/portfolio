@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
   <link rel="shortcut icon" href="asset/images/icon.jpg" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Dekko&family=Dhurjati&family=Oswald:wght@700&family=Rubik+Broken+Fax&family=Rubik+Doodle+Triangles&family=Silkscreen&family=Trocchi&family=Young+Serif&display=swap');
@@ -1453,16 +1454,16 @@
       <div class="row" style="margin-right:0;
   margin-left:0;">
         <div class="col-lg-12 d-none d-lg-block d-md-none col" id="first-img">
-          <img src="asset/images/logo-removebg-preview.png" alt="">
+          <img data-aos="fade-left" src="asset/images/logo-removebg-preview.png" alt="">
         </div>
         <div class="col-lg-6 col-md-12 col px-3" style="height:91vh;" id="fu">
           <div class="row" style="margin-right:0;
       margin-left:0;" id="my">
             <div class="col-lg col-md-12 col">
-              <h1 style="overflow: hidden; color: #9EC8B9;" class="web"> <span
+              <h1 style="overflow: hidden; color: #9EC8B9;" class="web" data-aos="fade-up"> <span
                   style="font-size:450%; font-weight:500; font-family: Abril Fatface;">WEB</span> <span
                   style="font-weight: 300; overflow: hidden; font-size:55%; font-family:Trocchi;">DEVELOPER</span></h1>
-              <h4 class="text-center" style="font-size:medium; color:white;">-“DEVELOPING ALL TYPE WEBSITE “-</h4>
+              <h4 class="text-center" data-aos="fade-up" style="font-size:medium; color:white;">-“DEVELOPING ALL TYPE WEBSITE “-</h4>
             </div>
           </div>
         </div>
@@ -1498,7 +1499,7 @@
         </li>
       </ul>
     </nav>
-    <div class="container-fluide" id="second-section" style="height:auto; background: #1B4242;">
+    <div class="container-fluide" data-aos="zoom-in" id="second-section" style="height:70vh; background: #1B4242;">
       <div class="row pt-3" style="margin-right:0;
     margin-left:0;">
         <div class="col-lg-6 text-center">
@@ -1509,11 +1510,7 @@
           <p style="font-family: 'Times New Roman', Times, serif;">Hello there! I'm Sinan, a passionate web developer
             with a love for crafting digital experiences that seamlessly blend creativity and functionality. As a
             dedicated professional in the ever-evolving world of technology, I thrive on turning innovative ideas into
-            interactive and user-friendly websites. <br> <span class="d-none d-sm-none d-md-block d-lg-block">a dynamic
-              individual driven by a deep curiosity for the limitless possibilities that the web offers. My journey in
-              web development has been a fascinating exploration of code, design, and user experience. I find joy in
-              translating concepts into captivating online spaces that not only meet but exceed expectations.</span><a
-              href="" class=" d-sm-block d-md-none d-lg-none">Read more</a></p>
+            interactive and user-friendly websites.
           <a href="pages/connect.html"><button class="custom-btn btn-11">connect<div class="dot"></div></button></a>
           <a href="">
             <button class="download-button">
@@ -1543,10 +1540,10 @@
     <!-- third-start-->
 
     <div class="container-fluide" id="third-section" style="height: 100vh; background:#092635; overflow: hidden;">
-      <div class="row" style="margin-right:0;
+      <div class="row justify-content-center" style="margin-right:0;
     margin-left:0;">
-        <div class="col-lg-9 col-md-12  col-sm-12">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide p-4 pt-5" data-bs-ride="carousel "
+        <div class="col-lg-8 col-md-12  col-sm-12">
+          <div id="carouselExampleDark" data-aos="fade-up" class="carousel carousel-dark slide p-4 pt-5" data-bs-ride="carousel "
             data-interval="1000">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -1590,13 +1587,6 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
-        <div id="ss" class="col-lg-3 col-md-12">
-          <div id="ff" class="container p-5 my-5" style="height:73vh;">
-          </div>
-        </div>
-        <div class="row" style="margin-right:0;
-      margin-left:0;">
         </div>
       </div>
     </div>
@@ -1676,7 +1666,12 @@
     </div>
   </footer>
   <!-- footer end -->
-
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  duration: 1200,
+})
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
